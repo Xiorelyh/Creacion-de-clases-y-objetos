@@ -2,21 +2,27 @@ class Te:
     duracion = 365
 
     @staticmethod
-    def retorna_tiempo_y_recomendacion(sabor):
+    def retorna_tiempo_y_recomendacion(sabor: int):
         if sabor == 1:
+            tiempo = 3
+            recomendacion = "al desayuno"
             return (
-                5,
-                "Al desayunar",
+                tiempo,
+                recomendacion
             )
         elif sabor == 2:
+            tiempo = 5
+            recomendacion = "al medio dia"
             return (
-                4,
-                "Al medio día",
+                tiempo,
+                recomendacion
             )
         elif sabor == 3:
+            tiempo = 6
+            recomendacion = "al atardecer"
             return (
-                7,
-                "Al atardecer",
+                tiempo,
+                recomendacion
             )
         else:
             return 0, "Sabor no válido"
